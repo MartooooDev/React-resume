@@ -2,7 +2,7 @@ import React from 'react'
 
 function Titulo({ children }) {
     return (
-        <div className="hr-sect mt-10">
+        <div className="hr-sect mt-50">
             {children}
         </div>
     )

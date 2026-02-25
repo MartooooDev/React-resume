@@ -19,8 +19,8 @@
   }
 }
 
-.mt-10 {
-  margin-top: 100px !important;
+.mt-50 {
+  margin-top: 50px !important;
 }
 
 #root {
@@ -35,6 +35,22 @@
   margin: auto;
   border: solid 1px white;
   margin-top: 50px;
+}
+
+.hr-sect {
+  display: flex;
+  align-items: end;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.651);
+  margin: 8px 10px;
+}
+
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.35);
+  height: 3px;
+  margin: 0px 8px;
 }
 
 .info-section {
@@ -70,7 +86,38 @@
     width: 20%;
     height: 20%;
     margin: auto;
+    max-width: 45%;
     /* margin-left: 1.3vw; */
+  }
+}
+
+.texto-secao {
+  margin-top: 15px;
+  padding-left: 1.5vw;
+  padding-right: 1vw;
+  text-align: left;
+}
+
+.titulo-secao {
+  text-align: start;
+  font-weight: bold;
+  font-size: 100%;
+
+  margin-left: 20px;
+}
+
+.subtitulo-secao {
+  text-align: start;
+  font-size: 100%;
+
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+
+@media (min-height: 1100px) {
+  .text-content {
+    width: 60%;
   }
 }
 
@@ -169,37 +216,36 @@
     line-height: 0px;
     margin: 0px 8px;
   }
-
-  .titulo-secao {
-    text-align: start;
-    font-weight: bold;
-    font-size: 30px;
-
-    margin-left: 20px;
-  }
-
-  .subtitulo-secao {
-    text-align: start;
-    font-size: 24px;
-
-    margin-left: 20px;
-    margin-bottom: 15px;
-  }
-
-  .texto-secao {
-    padding-left: 1.5vw;
-    padding-right: 1vw;
-    text-align: left;
-  }
 }
 
 /* mto pequeno (Samsung galaxy s8+) 360x740 */
 @media (max-width: 360px) {
+
   .content {
     width: 100%;
   }
 
   .info-section {
     width: 100%;
+  }
+
+  .text-content {
+    padding: 10px;
+  }
+
+  .hr-sect::before {
+    content: "";
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.35);
+    height: 3px;
+    margin: 0px 8px;
+  }
+
+  .texto-secao {
+    margin-top: 10%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: left;
+    font-size: 80%;
   }
 }

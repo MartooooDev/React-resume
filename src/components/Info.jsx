@@ -4,7 +4,7 @@ function Info({ nome, email, telefone, linkedin, github }) {
     return (
         <div className="info-section">
             <div className="info-content">
-                <div>
+                <div className="text-content">
                     <h1>
                         {nome}
                     </h1>
