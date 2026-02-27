@@ -1,4 +1,5 @@
 import React from 'react'
+import fotoProfile from '../assets/img/foto.png'
 
 function Info({ nome, email, telefone, linkedin, github }) {
     return (
@@ -19,7 +20,9 @@ function Info({ nome, email, telefone, linkedin, github }) {
                         </div>
                     </div>
                 </div>
-                <img src="https://as1.ftcdn.net/v2/jpg/16/65/34/02/1000_F_1665340295_7BnpTMM7bvom3tqnH8U2zbIBsEb0ezet.jpg" />
+            </div>
+            <div className="image">
+                <img src={ fotoProfile } />
             </div>
         </div>
     )

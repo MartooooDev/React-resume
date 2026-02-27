@@ -30,9 +30,39 @@ function App() {
 
         <Titulo>Competências</Titulo>
         <SectionText>
-          
+          <ul>
+            <li>
+              <p>
+                <strong>Idiomas: </strong> Inglês avançado.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Linguagens e frameworks: </strong> PHP, CodeIgniter 3, JavaScript, HTML5, CSS3.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Banco de dados: </strong> MySQL.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Ferramentas: </strong> Git/Github, Versionamento Semântico (Conventional Commit Patterns), Notion, Trello, Google Workspace.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Arquitetura: </strong> MVC.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Conceitos diversos: </strong> Clean Code, POO, Manutenção de sistemas legado.
+              </p>
+            </li>
+          </ul>
         </SectionText>
-
 
         <Titulo>Experiências</Titulo>
         <Experiencias />
@@ -42,7 +72,9 @@ function App() {
           Atuação no ciclo completo de desenvolvimento de sistemas web personalizados, buscando garantir performance, estabilidade e usabilidade.
           <ul>
             <li>
-              <p><strong>Desenvolvimento e manutenção </strong>: implementação de novas features e manutenção em sistemas já funcionando utilizando PHP com o framework CodeIgniter em arquitetura MVC.</p>
+              <p>
+                <strong>Desenvolvimento e manutenção </strong>: implementação de novas features e manutenção em sistemas já funcionando utilizando PHP com o framework CodeIgniter em arquitetura MVC.
+              </p>
             </li>
             <li>
               <p>
@@ -65,6 +97,24 @@ function App() {
         <SectionTitle title="Senior Curitiba" descricao="Estagiário em projetos" periodo="mar/2023 - dez/2023">
         </SectionTitle>
         <SectionText>
+          Auxílio aos gerentes de projeto em implementação de software (ERP e RH) e aos consultores com suas rotinas e controle de atividades.
+          <ul>
+            <li>
+              <p>
+                <strong>Documentação: </strong> Elaboração de documentos de todas as fases do ciclo de vida dos projetos (TAP, TEP, DRA, Atas de reunião, documentos complementares, etc.), garantindo o registro e a qualidade das entregas..
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Gestão de Implementação: </strong> Acompanhamento de cronogramas e progresso de projetos de sistemas ERP.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Interface com Cliente: </strong> Condução de reuniões de alinhamento entre consultores e clientes para controle de escopo e prazos.
+              </p>
+            </li>
+          </ul>
         </SectionText>
 
 
@@ -83,18 +133,6 @@ function App() {
           </ul>
         </SectionText>
       </div>
-
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

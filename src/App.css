@@ -26,15 +26,14 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  padding: 0px 12px 0px 12px
 }
 
 .content {
   max-width: 100%;
   margin: auto;
-  border: solid 1px white;
-  margin-top: 50px;
+  /* border: solid 1px white; */
 }
 
 .hr-sect {
@@ -55,13 +54,26 @@
 
 .info-section {
   color: rgb(255, 255, 255);
+  border: solid, 2px, rgb(255, 255, 255);
   border-bottom: solid;
   border-top: solid;
   border-radius: 15px;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
 
   max-width: 100%;
-  width: 100%;
+  width: 70%;
   margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & span {
+    margin-left: 2%;
+  }
 
   & a {
     color: white;
@@ -81,12 +93,14 @@
   display: flex;
   flex-direction: row;
   padding-right: 5%;
+  width: 100%;
 
   & img {
-    width: 20%;
-    height: 20%;
-    margin: auto;
-    max-width: 45%;
+    width: 40%;
+    height: 40%;
+    /* margin: auto; */
+    /* max-width: 45%; */
+    border-radius: 10px;
     /* margin-left: 1.3vw; */
   }
 }
@@ -114,14 +128,11 @@
   margin-bottom: 15px;
 }
 
-
-@media (min-height: 1100px) {
-  .text-content {
-    width: 60%;
-  }
+.text-content {
+  margin: auto;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   #root {
     width: 100%;
     margin: 0 auto;
@@ -132,49 +143,14 @@
   .content {
     max-width: 60%;
     margin: auto;
-    border: solid 1px white;
+    /* border: solid 1px white; */
     margin-top: 50px;
-  }
-
-  .info-section {
-    color: rgb(255, 255, 255);
-    border: solid, 2px, rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-
-    max-width: 100%;
-    width: 50%;
-    margin-right: 2%;
-    margin-left: auto;
-    margin-top: 3%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    & span {
-      margin-left: 2%;
-    }
-
-    & a {
-      color: white;
-      font-weight: bold;
-    }
   }
 
   .info-content {
     display: flex;
     flex-direction: row;
-
-    & img {
-      width: 20%;
-      height: 20%;
-      margin: auto;
-      /* margin-left: 1.3vw; */
-    }
+    width: 50%;
   }
 
   .info-section:hover {
@@ -187,6 +163,16 @@
     animation-name: ApagarBorda;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+  }
+
+  .text-content {
+    & h1 {
+      font-size: 100%;
+    }
+
+    & info {
+      font-size: 100%;
+    }
   }
 
   .info {
@@ -206,31 +192,40 @@
   .w-5 {
     margin: 5px;
   }
+}
 
-  .hr-sect::before {
-    content: "";
-    flex-grow: 1;
-    background: rgba(255, 255, 255, 0.35);
-    height: 1px;
-    font-size: 0px;
-    line-height: 0px;
-    margin: 0px 8px;
+@media (max-width: 999px) {
+
+  .text-content h1,
+  .text-content .info {
+    font-size: 100%;
+  }
+
+  .image {
+    max-width: 100%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & img {
+      border-radius: 10px;
+      max-height: 80%;
+      margin: auto;
+    }
+  }
+
+  .info-content {
+    padding: 0px;
+    max-width: 50%;
   }
 }
 
 /* mto pequeno (Samsung galaxy s8+) 360x740 */
-@media (max-width: 360px) {
-
+@media (max-width: 400px) {
   .content {
     width: 100%;
-  }
-
-  .info-section {
-    width: 100%;
-  }
-
-  .text-content {
-    padding: 10px;
+    margin-top: 10px;
   }
 
   .hr-sect::before {
@@ -247,5 +242,15 @@
     padding-right: 5vw;
     text-align: left;
     font-size: 80%;
+  }
+
+  .info-section img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  .info-section {
+    width: 100%;
   }
 }
